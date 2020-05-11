@@ -1,0 +1,1 @@
+Este projeto Quiz de Arte é um quiz estudantil, para ajudar os alunos a aprender arte de forma divertida e avaliar os conhecimentos artísticos dos alunos (Papel do professor).
