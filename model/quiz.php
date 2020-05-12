@@ -11,7 +11,7 @@
     $colunaAlterar = "tema";
     
     //adcionarQuiz($conexao, $tema, $numPerguntas, $tempoTotal);
-    //consultarQuiz($conexao);
+    consultarQuiz($conexao);
     //excluirQuiz($conexao, $idQuizExcluir);
     //updateTabela($conexao, $nomeTabela, $idDoAlterado, $valorAlterar, $colunaAlterar);
 ?>
