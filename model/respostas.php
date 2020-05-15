@@ -1,12 +1,12 @@
 <?php
     include "../conexao.php";
     
-    //adicionarResposta($conexao,'11', '5 de fevereiro de 1992', '0');
+    //adicionarResposta($conexao,'11', '5 de fevereiro de 1992', '1');
     //excluirResposta($conexao, 5);
     //consultarResposta($conexao, 11);
-    listarRespostas($conexao);
     //updateTabela($conexao, 12, "Resposta", "Data Certa");
-    
+    //excluirRespostas($conexao, '0', '18');
+    listarRespostas($conexao);
 
 ?>
 
@@ -19,12 +19,16 @@
     function adicionarResposta($conexao, $idPergunta, $resposta, $respostaCerta){
         $sql = "INSERT into respostas (idPergunta, resposta, respostaCerta) VALUES ($idPergunta, '$resposta', $respostaCerta)";
         mysqli_query($conexao, $sql) or die ("Falha ao inserir dados no banco");
-        echo $idPergunta;
     
     }
 
     function excluirResposta($conexao, $idRespostas){
         $sql = "DELETE from respostas WHERE idRespostas = '$idRespostas'";
+        mysqli_query($conexao, $sql) or die ("Falha ao deletar dados no banco");
+    }
+
+    function excluirRespostas($conexao, $intervaloMenor, $intervaloMaior){
+        $sql = "DELETE from respostas WHERE idRespostas >$intervaloMenor and idRespostas < $intervaloMaior+1";
         mysqli_query($conexao, $sql) or die ("Falha ao deletar dados no banco");
     }
 

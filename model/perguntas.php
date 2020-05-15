@@ -15,10 +15,11 @@
     $colunaAlterar;
 
     //updateTabela($conexao, 11, "tempoResposta", "500");
-    consultarPergunta($conexao, 17);
     //adicionarPergunta($conexao, '17', 'Quando nasceu neymar', '', '50');
-    //excluirPergunta($conexao, '12');
-    //listarPerguntas($conexao);
+    //excluirPergunta($conexao, '1');
+    //excluirPerguntas($conexao, '0', '15');
+    listarPerguntas($conexao);
+    //consultarPergunta($conexao, 17);
     
 ?>
 
@@ -37,6 +38,11 @@
 
     function excluirPergunta($conexao, $idPergunta){
         $sql = "DELETE from perguntas WHERE idPergunta = '$idPergunta'";
+        mysqli_query($conexao, $sql) or die ("Falha ao deletar dados no banco");
+    }
+
+    function excluirPerguntas($conexao, $intervaloMenor, $intervaloMaior){
+        $sql = "DELETE from perguntas WHERE idPergunta >$intervaloMenor and idPergunta < $intervaloMaior";
         mysqli_query($conexao, $sql) or die ("Falha ao deletar dados no banco");
     }
 
