@@ -1,5 +1,5 @@
 <?php
-    include "../conexao.php";
+    include "../bd/conexao.php";
 
     //Variaveis
 

@@ -1,5 +1,5 @@
 <?php
-    include "navBar.html";
+    include "view/navBar.html";
 ?>
 
 <!doctype html>
