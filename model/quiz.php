@@ -1,5 +1,5 @@
 <?php
-    include "../conexao.php";
+    include "../bd/conexao.php";
     $tema = "Medieval";
     $numPerguntas = "10";
     $tempoTotal = "1800";

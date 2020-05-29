@@ -1,5 +1,5 @@
 <?php
-    include "../conexao.php";
+    include "../bd/conexao.php";
     
     //adicionarResposta($conexao,'11', '5 de fevereiro de 1992', '1');
     //excluirResposta($conexao, 5);

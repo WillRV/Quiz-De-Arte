@@ -14,26 +14,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/quizdearte/css/formlogin.css">
     <title>Bem vindo!</title>
   </head>
-  <body style="background: #c8ca00">
-
-    <form class="align-items-center" style="width: 20%; align: center; margin: auto auto; margin-top: 10%;">
-        <div class="form-group">
-            <label>Email:</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-            <label>Senha:</label>
-            <input type="password" class="form-control" id="senha">
-        </div>
-        <div class="form-group">
-            <label>Confirme a Senha:</label>
-            <input type="password" class="form-control" id="senha">
-        </div>
-        <button type="reset" class="btn btn-primary">Limpar</button>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+  <body>
+    
+    <form>
+      <p class="cadastroH3">Cadastro</p>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email aqui!">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua Senha aqui!">
+        <small>Ainda não tem uma conta? <a href="#">Cadastre-se aqui! <br></a></small>
+        <small><a href="#">Esqueci minha senha</a></small>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="checkLembrar">
+        <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Logar</button>
     </form>
   </body>
 </html>
