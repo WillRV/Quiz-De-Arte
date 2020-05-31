@@ -19,7 +19,7 @@
   </head>
   <body>
     
-    <form>
+    <form method="post" action="/quizdearte/index.php">
       <p class="cadastroH3">Cadastro</p>
       <div class="form-group">
         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email aqui!">
@@ -34,6 +34,8 @@
         <input type="checkbox" class="form-check-input" id="checkLembrar">
         <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
       </div>
+      <!--Por algum motivo, esse botão não funciona -->
+      <button type="submit" class="btn btn-primary">Voltar</button></a> 
       <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
   </body>
