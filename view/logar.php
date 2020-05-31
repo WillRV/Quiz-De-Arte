@@ -19,13 +19,13 @@
   </head>
   <body>
     
-    <form method="post" action="/quizdearte/index.php">
+    <form method="get" action="/quizdearte/view/confirmaLogin.php">
       <p class="cadastroH3">Cadastro</p>
       <div class="form-group">
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email aqui!">
+      <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email aqui!">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" id="senha" placeholder="Digite sua Senha aqui!">
+        <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite sua Senha aqui!">
         <small>Ainda não tem uma conta? <a href="/quizdearte/view/registrar.php">Cadastre-se aqui! <br></a></small>
         <small><a href="/quizdearte/view/esqueciSenha.php">Esqueci minha senha</a></small>
       </div>
